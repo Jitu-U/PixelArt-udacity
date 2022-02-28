@@ -48,7 +48,7 @@ function makeGrid(height, width) {
 
             //One more thing: It requires double click to change color first time on each cell
 
-            table += `<th class="cell" id="${id}" onclick=" this.style.backgroundColor === 'white' ? (this.style.backgroundColor = color(colorPicker.value)) : (this.style.backgroundColor = 'white');"></th>`;
+            table += `<th class="cell" id="${id}" onclick="(this.style.backgroundColor = color(colorPicker.value));"></th>`;
             id++;
         }
         table += "</tr>" // End Tag to create new row with loop
